@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    overflow: hidden;
+}
+
+:root { 
+    --yellow: #FFA800;
+    --blue: #0072D2;
+    --black: #131318;
+
+
+    font-size: 62.5%;
+}
+
+/** BODY GERAL **/
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./desafio6/image/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.info img {
+    display: none;
+}
+
+/****** MAIN ***/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.available {
+   display: flex;
+   flex-direction: column;
+   margin-top: 3rem;
+   gap: 2rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.available h2 {
+    font-size: 2rem;
+}
+
+.available h1 {
+    font-size: 6.5rem;
+}
+
+/*** INFO ***/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: end;
+    
+}
+
+.info .description {
+    font-size: 1.5rem;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.info .painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .3rem;
+}
+
+.info .stats
+ {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.info .stats svg {
+    width: 28px;
+}
+
+.info .stats p {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+/** BUTTONS **/
+
+.buttons {
+    display: flex;
+    gap: 3rem;
+}
+
+.buttons button {
+       width: 13rem;
+       height: 4rem;
+       border-radius: .5rem;
+       text-transform: uppercase;
+       margin-top: 2rem;
+
+       cursor: pointer;
+}
+
+.buttons .watch {
+    border: none;
+    background: var(--blue);
+}
+
+.buttons .trailer {
+    border: 1px solid #FFFFFF;
+    background: var(--black);
+}
+
+@media screen and (min-width: 600px) {
+   
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 1rem;
+    }
+
+    .info .painel {
+        display: flex;
+       
+        align-items: start;
+      
+        }
+        
+        .info img {
+            display: block;
+            width: 16rem;
+        }
+        
+        .info .description {
+            width: 57vw;
+        }
+        
+    }
+
+
