@@ -8,7 +8,7 @@
     font-weight: 700;
     color: #FFFFFF;
 
-    overflow: hidden;
+   
 }
 
 :root { 
@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
+    overflow: hidden;
 }
 
 .info img {
